@@ -109,7 +109,7 @@ class StreamingJibriService(
         }
         jibriSelenium.joinCall(
             streamingParams.callParams.callUrlInfo.copy(urlParams = RECORDING_URL_OPTIONS),
-            streamingParams.callLoginParams
+            null
         )
 
         whenever(jibriSelenium).transitionsTo(ComponentState.Running) {

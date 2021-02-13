@@ -86,7 +86,7 @@ data class JibriSeleniumOptions(
 )
 
 val SIP_GW_URL_OPTIONS = listOf(
-    "config.iAmRecorder=true",
+//    "config.iAmRecorder=true",
     "config.iAmSipGateway=true",
     "config.ignoreStartMuted=true",
     "config.analytics.disabled=true",
@@ -97,15 +97,15 @@ val SIP_GW_URL_OPTIONS = listOf(
 )
 
 val RECORDING_URL_OPTIONS = listOf(
-    "config.iAmRecorder=true",
-    "config.externalConnectUrl=null",
+//    "config.iAmRecorder=true",
+//    "config.externalConnectUrl=null",
     "config.startWithAudioMuted=true",
     "config.startWithVideoMuted=true",
-    "interfaceConfig.APP_NAME=\"Jibri\"",
+//    "interfaceConfig.APP_NAME=\"Jibri\"",
     "config.analytics.disabled=true",
     "config.p2p.enabled=false",
-    "config.prejoinPageEnabled=false",
-    "config.requireDisplayName=false"
+    "config.prejoinPageEnabled=false"
+//    "config.requireDisplayName=false"
 )
 
 /**

@@ -29,7 +29,7 @@ fun getFfmpegCommandLinux(ffmpegExecutorParams: FfmpegExecutorParams, sink: Sink
         "-i", ":0.0+0,0",
         "-f", "alsa",
         "-thread_queue_size", ffmpegExecutorParams.queueSize.toString(),
-        "-i", "plug:bsnoop",
+        "-i", "hw:5",
         "-acodec", "aac", "-strict", "-2", "-ar", "44100", "-b:a", "128k",
         "-af", "aresample=async=1",
         "-c:v", "libx264", "-preset", ffmpegExecutorParams.videoEncodePreset,
